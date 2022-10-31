@@ -15,8 +15,8 @@ ul {
 }
 
 form {
-    width: 60%;
-    margin: 2rem auto;
+    width: 40rem;
+    margin: auto;
     background-color: rgb(175, 250, 250);
     border: 1px solid none;
     border-radius: 5px;
@@ -24,24 +24,34 @@ form {
     padding: 1rem;
 }
 
+section {
+    margin-bottom: 1rem;
+}
+
 label {
     /* 몰랐던거 */
     display: block;
-    margin-top: 10px;
-    margin-bottom: 2px;
+    margin: 0.5rem 0;
+    font-weight: bold;
 }
 
-input {
-    padding: 3px;
-    
+input, textarea, select {
+    font: inherit;
+    padding: 0.5rem;
+    border: 1px solid;
+    border-radius: 4px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
 }
+
+input:focus, textarea:focus, select:focus {
+    background-color: beige;
+}
+
 
 textarea {
     resize: none;
-}
-
-select {
-    padding: 3px;
 }
 
 #content {
@@ -50,7 +60,7 @@ select {
 
 #content input {
     width: auto;
-    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 #btn {

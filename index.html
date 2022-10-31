@@ -12,25 +12,39 @@
       <h1>Contact Us</h1>
     </header>
     <main>
-      <form action="/" method="GET">
+      <form action="/index.html" method="GET">
         <section>
           <h2>How can we help you?</h2>
           <ul>
             <li>
               <label for="name">Your Name</label>
-              <input type="text" id="name" name="username" required placeholder="Name"/>
+              <input
+                type="text"
+                id="name"
+                name="username"
+                required
+                placeholder="Name"
+              />
             </li>
             <li>
               <label for="email">Your E-Mail Address</label>
-              <input type="email" id="email" name="useremail" required placeholder="email"/>
+              <input
+                type="email"
+                id="email"
+                name="useremail"
+                required
+                placeholder="email"
+              />
             </li>
             <li>
-              <label for="phone">Your Name</label>
+              <label for="phone">Your Phone Number</label>
               <input
                 type="number"
                 id="phone"
                 value="userphonenumber"
                 required
+                minlength="5"
+                maxlength="200"
               />
             </li>
             <li>
@@ -41,7 +55,7 @@
         </section>
         <section>
           <label for="way">How did you find us?</label>
-          <select name="howtofind" id="way">
+          <select name="howtofind" id="way" required>
             <option value="Web">Web Search</option>
             <option value="Mouth">Word of Mouth</option>
             <option value="Other">Other</option>
@@ -51,21 +65,39 @@
           <h2>How should we reply?</h2>
           <ul>
             <li id="content">
-              <input type="radio" name="reply" required />
+              <input
+                type="radio"
+                name="reply"
+                id="call"
+                value="phone"
+                required
+              />
               <label for="call">Call me</label>
             </li>
             <li id="content">
-              <input type="radio" name="reply" required />
+              <input
+                type="radio"
+                name="reply"
+                id="email"
+                value="email"
+                required
+              />
               <label for="email">Send me an email</label>
             </li>
             <li id="content">
-              <input type="radio" name="reply" required />
-              <label for="don't_want">Don't reply</label>
+              <input
+                type="radio"
+                name="reply"
+                id="don't_want"
+                value="none"
+                required
+              />
+              <label for="none">Don't reply</label>
             </li>
           </ul>
         </section>
         <section id="content">
-          <input type="checkbox" id="terms" />
+          <input type="checkbox" name="accept-terms" id="terms" />
           <label for="terms">Accept Terms</label>
         </section>
         <section id="btn">
