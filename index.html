@@ -39,23 +39,22 @@
             <li>
               <label for="phone">Your Phone Number</label>
               <input
-                type="number"
+                type="tel"
                 id="phone"
-                value="userphonenumber"
+                name="phone"
                 required
                 minlength="5"
-                maxlength="200"
               />
             </li>
             <li>
               <label for="msg">Your Message</label>
-              <textarea name="Message" id="msg" rows="5"></textarea>
+              <textarea name="Message" id="msg" rows="5" maxlength="200" required></textarea>
             </li>
           </ul>
         </section>
         <section>
-          <label for="way">How did you find us?</label>
-          <select name="howtofind" id="way" required>
+          <label for="channel">How did you find us?</label>
+          <select name="channel" id="way" required>
             <option value="Web">Web Search</option>
             <option value="Mouth">Word of Mouth</option>
             <option value="Other">Other</option>
@@ -88,7 +87,7 @@
               <input
                 type="radio"
                 name="reply"
-                id="don't_want"
+                id="none"
                 value="none"
                 required
               />
